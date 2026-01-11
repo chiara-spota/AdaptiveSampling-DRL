@@ -1,0 +1,27 @@
+# macOS junk
+.DS_Store
+
+# data
+mitbih/
+*.pickle
+*.pkl
+all_data.pickle
+rl_train.pkl
+rl_eval.pkl
+
+# models / checkpoints
+DRL/model/
+DRL/results/
+saved_models/
+checkpoints_weight/
+**/checkpoint
+
+# results / generated figures
+
+*.npy
+*.csv
+*.png
+*.jpg
+*.gif
+
+Figures/

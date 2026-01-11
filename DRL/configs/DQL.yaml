@@ -1,0 +1,44 @@
+name: "AdaptiveSamplingV3"
+#seed: 1
+
+data_train_path: "../rl_train.pkl"
+data_eval_path:  "../rl_eval.pkl"
+
+policy_model_save_path: "../checkpoints_weight/"
+
+use_PER: True
+min_beta: 0.4
+max_beta: 1.0
+
+## Experiment
+experiments_save_path: "../results/eval/"
+
+num_trials: 10
+experiment_num: 1
+
+# Environment parameters 
+override_num_subjects: False
+num_subjects_train: 5
+
+reward_lambda: 1
+normalize_rewards: True   # max, min
+standardize_rewards: False    # mean, stdev
+
+use_gpu: True
+gradient_clip: False
+
+# DDQN parameters
+feature_size: 256
+num_actions: 4
+max_epsilon: 1.0 # determines the action for exploration vs exploitation
+min_epsilon: 0.01
+epsilon_decay_rate: 1
+batch_delay: 1
+replay_batch_size: 32
+learning_rate_max: 0.0001
+learning_rate_min: 0.00001
+gamma: 0.99    # the discount value
+hard_update: True
+target_network_hard_update_rate: 100   # target network updates every n episodes for hard update
+tau: 0.001    # used for softupdate
+replay_memory_size: 1000000

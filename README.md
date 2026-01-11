@@ -1,5 +1,17 @@
 # AdaptiveSampling-DRL
 
+## Acknowledgements and References
+
+This codebase was developed as part of the Reinforcement Learning module coursework project.  
+The implementation is inspired by and partially based on the methodology and open-source implementation described in:
+
+> Demirel, B. U., Chen, L., & Al Faruque, M. A. (2023).  
+> *Data-driven Energy-efficient Adaptive Sampling Using Deep Reinforcement Learning*.  
+> ACM Transactions on Computing for Healthcare, 4(3).
+
+The original paper proposes a deep reinforcement learning framework for adaptive ECG sampling to reduce energy consumption while maintaining arrhythmia classification performance.  
+This repository is an educational re-implementation and extension of those ideas for coursework purposes and is **not an official reproduction** of the original authors’ code.
+
 ## Overview
 This repo describes the official software package developed for and used to create the free and public adaptive sampling rate controller. It is a a runtime implementation of sampling rate control using deep reinforcement learning (DRL). By using essential morphological details contained in the heartbeat waveform, the DRL agent can control the sampling rate and effectively reduce energy consumption at runtime.
 
@@ -10,11 +22,11 @@ This repo describes the official software package developed for and used to crea
 
 ## Motivational Example
 #### The model architecture is implemented in [models.py](https://github.com/Berken-demirel/AdaptiveSampling-DRL/blob/main/dana_MIT_constant.py). Requirements_2 is needed to run the script without errors.
-<img src="./Figures/mot_jbhi.jpg" width="600">
+
 
 ## Model Architecture
 #### The model architecture is implemented in [models.py](https://github.com/Berken-demirel/AdaptiveSampling-DRL/blob/main/models.py). Requirements_2 is needed to run the script without errors.
-<img src="./Figures/jbhi_arch.png" width="600">
+
 
 
 ## DRL Training
